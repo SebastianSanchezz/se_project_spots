@@ -1,21 +1,27 @@
-# Project 3: Spots
+# Spots - A Social Media Photo Sharing Web Application
 
-### Overview  
+## Project Description
 
-* Intro  
-* Figma  
-* Images  
-  
-**Intro**
-  
-This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.  
-  
-**Figma**  
-  
-* [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
-  
-**Images**  
-  
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster. 
-  
-Good luck and have fun!
+'Spots' is an interactive social media web application that allows users to add and remove photos of other users and make profile adjustments. The app includes features such as creating new posts, liking photos, and updating user profiles. The interface is responsive, providing an engaging and user-friendly experience.
+
+## Features
+
+- Users can add new posts with images.
+- A list of cards shows photos, each with a title and a like button.
+- Profiles can be edited, and new posts can be added.
+- The app is responsive, ensuring a good experience across mobile and desktop devices.
+
+## Technologies and Techniques Used
+
+- **HTML5**: The structure of the application is built using semantic HTML5 tags to ensure accessibility and SEO benefits.
+- **CSS3**: Custom styles are applied for layout, design, and responsiveness. Techniques like Flexbox and CSS Grid are used to create flexible, responsive layouts.
+  - Media queries are applied to handle responsiveness across different screen sizes.
+  - '@font-face' is used to include custom fonts (Poppins) for a modern and clean typography style.
+  - 'grid-template-columns' and 'repeat(auto-fit)' are used to create responsive grids for displaying the cards.
+- **SVG Icons**: SVG icons (such as the edit button and like button) are embedded directly in the HTML for easy customization and to ensure they scale without loss of quality.
+
+---
+
+**Figma**
+
+- [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)

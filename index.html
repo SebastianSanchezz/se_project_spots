@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Welcome to Spots, an interactive social media web application where users can add and remove photos of other users, and make a few minor adjustments to their profile."
+    />
+    <meta name="author" content="Sebastian Sanchez" />
+    <meta name="keywords" content="spots, social media, photos, profiles" />
+    <link rel="stylesheet" href="./pages/index.css" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <title>Spots</title>
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <img src="./images/logo.svg" alt="Spot logo" class="header__logo" />
+      </header>
+      <main class="content">
+        <div class="profile page__section">
+          <img
+            src="./images/avatar.jpg"
+            alt="Bessie Coleman"
+            class="profile__avatar"
+          />
+          <div class="profile__column">
+            <h1 class="profile__name">Bessie Coleman</h1>
+            <p class="profile__description">Civil Aviator</p>
+            <button type="button" class="profile__edit-button">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="13.0676"
+                  y="4.87506"
+                  width="11.6506"
+                  height="3.21396"
+                  transform="rotate(135 13.0676 4.87506)"
+                  fill="currentColor"
+                />
+                <path
+                  d="M14.2036 1.4662C14.8312 2.09377 14.8312 3.11125 14.2036 3.73881L13.6354 4.30697L11.3628 2.03436L11.931 1.4662C12.5586 0.83864 13.576 0.83864 14.2036 1.4662Z"
+                  fill="currentColor"
+                />
+                <path
+                  d="M1.54021 13.4837L2.55674 10.8408L4.82935 13.1134L2.18637 14.1299C1.782 14.2854 1.38468 13.8881 1.54021 13.4837Z"
+                  fill="currentColor"
+                />
+              </svg>
+              Edit Profile
+            </button>
+          </div>
+          <button type="button" class="profile__add-button">
+            <img src="./images/plus.svg" alt="Plus icon" />New Post
+          </button>
+        </div>
+        <section class="cards page__section">
+          <ul class="cards__list">
+            <li class="card">
+              <img
+                src="./images/1-photo-by-moritz-feldmann-from-pexels.jpg"
+                alt="Val Thorens"
+                class="card__image"
+              />
+              <div class="card__content">
+                <h2 class="card__title">Val Thorens</h2>
+                <button type="button" class="card__like-button"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="./images/2-photo-by-ceiline-from-pexels.jpg"
+                alt="Restaurant terrace"
+                class="card__image"
+              />
+              <div class="card__content">
+                <h2 class="card__title">Restaurant terrace</h2>
+                <button type="button" class="card__like-button"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="./images/3-photo-by-tubanur-dogan-from-pexels.jpg"
+                alt="An outdoor cafe"
+                class="card__image"
+              />
+              <div class="card__content">
+                <h2 class="card__title">An outdoor cafe</h2>
+                <button type="button" class="card__like-button"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="./images/4-photo-by-maurice-laschet-from-pexels.jpg"
+                alt="A very long bridge, over the fores..."
+                class="card__image"
+              />
+              <div class="card__content">
+                <h2 class="card__title">
+                  A very long bridge, over the fores...
+                </h2>
+                <button type="button" class="card__like-button"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="./images/5-photo-by-van-anh-nguyen-from-pexels.jpg"
+                alt="Tunnel with morning light"
+                class="card__image"
+              />
+              <div class="card__content">
+                <h2 class="card__title">Tunnel with morning light</h2>
+                <button type="button" class="card__like-button"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="./images/6-photo-by-moritz-feldmann-from-pexels.jpg"
+                alt="Mountain house"
+                class="card__image"
+              />
+              <div class="card__content">
+                <h2 class="card__title">Mountain house</h2>
+                <button type="button" class="card__like-button"></button>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+      <footer class="footer">2024 &copy Spots</footer>
+    </div>
+  </body>
+</html>
