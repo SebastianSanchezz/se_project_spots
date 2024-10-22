@@ -2,7 +2,7 @@
 
 ## Project Description
 
-'Spots' is an interactive social media web application that allows users to add and remove photos of other users and make profile adjustments. The app includes features such as creating new posts, liking photos, and updating user profiles. The interface is responsive, providing an engaging and user-friendly experience.
+'Spots' is an interactive social media web application that allows users to add and remove photos to their profile and make profile adjustments. The app includes features such as creating new posts, liking photos, and updating user profiles. The interface is responsive, providing an engaging and user-friendly experience.
 
 ## Features
 
