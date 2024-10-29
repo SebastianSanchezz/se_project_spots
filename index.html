@@ -19,7 +19,7 @@
         <img src="./images/logo.svg" alt="Spot logo" class="header__logo" />
       </header>
       <main class="content">
-        <div class="profile page__section">
+        <section class="profile page__section">
           <img
             src="./images/avatar.jpg"
             alt="Bessie Coleman"
@@ -29,37 +29,14 @@
             <h1 class="profile__name">Bessie Coleman</h1>
             <p class="profile__description">Civil Aviator</p>
             <button type="button" class="profile__edit-button">
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect
-                  x="13.0676"
-                  y="4.87506"
-                  width="11.6506"
-                  height="3.21396"
-                  transform="rotate(135 13.0676 4.87506)"
-                  fill="currentColor"
-                />
-                <path
-                  d="M14.2036 1.4662C14.8312 2.09377 14.8312 3.11125 14.2036 3.73881L13.6354 4.30697L11.3628 2.03436L11.931 1.4662C12.5586 0.83864 13.576 0.83864 14.2036 1.4662Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M1.54021 13.4837L2.55674 10.8408L4.82935 13.1134L2.18637 14.1299C1.782 14.2854 1.38468 13.8881 1.54021 13.4837Z"
-                  fill="currentColor"
-                />
-              </svg>
+              <img src="./images/pencil.svg" alt="Pencil icon" />
               Edit Profile
             </button>
           </div>
           <button type="button" class="profile__add-button">
             <img src="./images/plus.svg" alt="Plus icon" />New Post
           </button>
-        </div>
+        </section>
         <section class="cards page__section">
           <ul class="cards__list">
             <li class="card">
@@ -103,7 +80,7 @@
               />
               <div class="card__content">
                 <h2 class="card__title">
-                  A very long bridge, over the fores...
+                  A very long bridge, over the forest...
                 </h2>
                 <button type="button" class="card__like-button"></button>
               </div>
@@ -133,7 +110,9 @@
           </ul>
         </section>
       </main>
-      <footer class="footer">2024 &copy Spots</footer>
+      <footer class="footer">
+        <p class="footer__content">2024 &copy; Spots</p>
+      </footer>
     </div>
   </body>
 </html>
