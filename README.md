@@ -31,3 +31,7 @@
 This project is deployed on GitHub Pages.
 
 - [Deployement Link](https://sebastiansanchezz.github.io/se_project_spots/)
+
+**Project Video**
+
+- [Video Link](https://drive.google.com/file/d/1v4_ghUXYRLDYsZU9e0VnPxZtonfFbSGT/view?usp=sharing)
