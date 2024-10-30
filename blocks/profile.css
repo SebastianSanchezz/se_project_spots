@@ -30,6 +30,7 @@
   line-clamp: 3;
   box-orient: vertical;
   max-width: 420px;
+  color: rgba(33, 33, 33, 1);
 }
 
 .profile__description {
@@ -67,7 +68,6 @@
 }
 
 .profile__edit-button:hover {
-  color: rgba(33, 33, 33, 1);
   opacity: 100%;
   cursor: pointer;
 }
