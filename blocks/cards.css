@@ -1,16 +1,16 @@
 .cards {
-  padding: 20px 0 40px;
   border-bottom: 1px rgba(33, 33, 33, 0.4) solid;
+  padding: 20px 0 40px;
 }
 
 .cards__list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
   display: grid;
+  gap: 40px 20px;
   grid-template-columns: repeat(auto-fit, 413px);
   justify-content: center;
-  gap: 40px 20px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 @media screen and (max-width: 627px) {
