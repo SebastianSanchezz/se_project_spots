@@ -13,7 +13,7 @@
   padding: 0 10px;
 }
 
-.modal__opened {
+.modal_opened {
   visibility: visible;
 }
 
@@ -47,7 +47,7 @@
   cursor: pointer;
 }
 
-.modal__close-button_icon {
+.modal__close-button-icon {
   width: 100%;
   height: 100%;
 }
