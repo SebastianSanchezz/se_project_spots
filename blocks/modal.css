@@ -116,6 +116,7 @@
 .modal__label {
   display: flex;
   flex-direction: column;
+  margin-bottom: 32px;
   gap: 8px;
   font-size: 16px;
   font-weight: 500;
@@ -126,7 +127,7 @@
 
 .modal__input {
   padding: 16px 12px;
-  margin-bottom: 32px;
+  margin-bottom: 0px;
   border-radius: 8px;
   border: 1px solid;
   border-color: rgba(33, 33, 33, 0.4);
@@ -135,6 +136,18 @@
   line-height: 20px;
   text-align: left;
   color: rgba(33, 33, 33, 1);
+}
+
+.modal_input_type_error {
+  border: 1px solid rgba(255, 0, 0, 0.6);
+}
+
+.modal__error {
+  color: rgba(255, 0, 0, 0.7);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 17.6px;
+  margin-top: 8px;
 }
 
 .modal__input::placeholder {
@@ -157,6 +170,18 @@
   border: none;
   color: rgba(252, 245, 229, 1);
   background: rgba(33, 33, 33, 1);
+  cursor: pointer;
+}
+
+.modal__submit-button:hover {
+  background: rgba(33, 33, 33, 0.8);
+  cursor: pointer;
+}
+
+.modal__submit-button_disabled {
+  background: rgba(33, 33, 33, 1);
+  opacity: 50%;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 627px) {
