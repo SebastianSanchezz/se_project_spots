@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Welcome to Spots, an interactive social media web application where users can add and remove photos of other users, and make a few minor adjustments to their profile."
+    />
+    <meta name="author" content="Sebastian Sanchez" />
+    <meta name="keywords" content="spots, social media, photos, profiles" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <title>Spots</title>
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <img src="./images/logo.svg" alt="Spot logo" class="header__logo" />
+      </header>
+      <main class="content">
+        <section class="profile page__section">
+          <img
+            src="./images/avatar.jpg"
+            alt="Bessie Coleman"
+            class="profile__avatar"
+          />
+          <div class="profile__column">
+            <h1 class="profile__name">Bessie Coleman</h1>
+            <p class="profile__description">Civil Aviator</p>
+            <button type="button" class="profile__edit-button">
+              <img src="./images/pencil.svg" alt="Pencil icon" />
+              Edit Profile
+            </button>
+          </div>
+          <button type="button" class="profile__add-button">
+            <img src="./images/plus.svg" alt="Plus icon" />New Post
+          </button>
+        </section>
+        <section class="cards page__section">
+          <ul class="cards__list">
+            <template id="card-template">
+              <li class="card">
+                <img src="" alt="" class="card__image" />
+                <button type="button" class="card__delete-button"></button>
+                <div class="card__content">
+                  <h2 class="card__title"></h2>
+                  <button type="button" class="card__like-button"></button>
+                </div>
+              </li>
+            </template>
+          </ul>
+        </section>
+      </main>
+      <footer class="footer">
+        <p class="footer__content">2024 &copy; Spots</p>
+      </footer>
+      <div class="modal" id="edit-modal">
+        <div class="modal__content">
+          <button type="button" class="modal__close-button">
+            <img
+              src="./images/close.svg"
+              alt="close icon"
+              class="modal__close-button-icon"
+            />
+          </button>
+          <h2 class="modal__title">Edit profile</h2>
+          <form name="edit-profile" class="modal__form" novalidate>
+            <label for="profile-name-input" class="modal__label">
+              Name
+              <input
+                id="profile-name-input"
+                type="text"
+                class="modal__input"
+                placeholder="Type your name"
+                required
+                minlength="2"
+                maxlength="40"
+              />
+              <span id="profile-name-input-error" class="modal__error"></span>
+            </label>
+            <label for="profile-description-input" class="modal__label">
+              Description
+              <input
+                id="profile-description-input"
+                type="text"
+                class="modal__input"
+                placeholder="Describe yourself"
+                required
+                minlength="2"
+                maxlength="200"
+              />
+              <span
+                id="profile-description-input-error"
+                class="modal__error"
+              ></span>
+            </label>
+            <button type="submit" class="modal__submit-button">Save</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="modal" id="add-card-modal">
+        <div class="modal__content">
+          <button type="button" class="modal__close-button">
+            <img
+              src="./images/close.svg"
+              alt="close icon"
+              class="modal__close-button-icon"
+            />
+          </button>
+          <h2 class="modal__title">New Post</h2>
+          <form class="modal__form" id="add-card-form" novalidate>
+            <label class="modal__label" for="add-card-link-input">
+              Image link
+              <input
+                id="add-card-link-input"
+                type="url"
+                class="modal__input"
+                placeholder="Paste a link to the picture"
+                name="link"
+                required
+              />
+              <span id="add-card-link-input-error" class="modal__error"></span>
+            </label>
+            <label class="modal__label" for="add-card-name-input">
+              Caption
+              <input
+                id="add-card-name-input"
+                type="text"
+                class="modal__input"
+                placeholder="Type your caption"
+                name="name"
+                required
+                minlength="2"
+                maxlength="30"
+              />
+              <span id="add-card-name-input-error" class="modal__error"></span>
+            </label>
+            <button type="submit" class="modal__submit-button">Save</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="preview-modal">
+      <div class="modal__preview-content">
+        <button
+          aria-label="Close Modal"
+          class="modal__close-button modal__close-button_preview"
+          type="button"
+        ></button>
+        <img class="modal__image" src="#" alt="" />
+        <p class="modal__caption"></p>
+      </div>
+    </div>
+  </body>
+</html>
