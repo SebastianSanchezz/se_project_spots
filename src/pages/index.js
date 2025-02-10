@@ -1,3 +1,21 @@
+import "./index.css";
+import {
+  enableValidation,
+  settings,
+  resetValidation,
+} from "../scripts/validation.js";
+import logo from "../images/logo.svg";
+import avatar from "../images/avatar.jpg";
+import pencilIcon from "../images/pencil.svg";
+import plusIcon from "../images/plus.svg";
+import closeIcon from "../images/close.svg";
+
+document.querySelector(".header__logo").src = logo;
+document.querySelector(".profile__avatar").src = avatar;
+document.querySelector(".profile__edit-button img").src = pencilIcon;
+document.querySelector(".profile__add-button img").src = plusIcon;
+document.querySelector(".modal__close-button-icon").src = closeIcon;
+
 const initialCards = [
   {
     name: "Val Thorens",
@@ -169,3 +187,5 @@ function closeModal(modal) {
   document.removeEventListener("keydown", handleEscKeyPress);
   modal.removeEventListener("mousedown", handleOverlayClick);
 }
+
+enableValidation(settings);
