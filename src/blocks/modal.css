@@ -216,6 +216,7 @@
 }
 
 .modal__submit-button {
+  font-family: "Poppins", Arial, Helvetica, sans-serif !important;
   width: 156px;
   padding: 18px 0;
   border-radius: 8px;
